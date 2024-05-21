@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24574A1E2BFC41850089CC2F /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24574A1D2BFC41850089CC2F /* HealthMetric.swift */; };
 		2499D7D62BE2F83700738314 /* StepTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7D52BE2F83700738314 /* StepTrackerApp.swift */; };
 		2499D7D82BE2F83700738314 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7D72BE2F83700738314 /* DashboardView.swift */; };
 		2499D7DA2BE2F83A00738314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2499D7D92BE2F83A00738314 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24574A1D2BFC41850089CC2F /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 		2499D7D22BE2F83700738314 /* StepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2499D7D52BE2F83700738314 /* StepTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTrackerApp.swift; sourceTree = "<group>"; };
 		2499D7D72BE2F83700738314 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				2499D7EE2BE5E18F00738314 /* HealthKitManager.swift */,
 				2499D7D92BE2F83A00738314 /* Assets.xcassets */,
 				2499D7DB2BE2F83A00738314 /* Preview Content */,
+				24574A1D2BFC41850089CC2F /* HealthMetric.swift */,
 			);
 			path = StepTracker;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				2499D7D62BE2F83700738314 /* StepTrackerApp.swift in Sources */,
 				2499D7EF2BE5E18F00738314 /* HealthKitManager.swift in Sources */,
 				2499D7EC2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift in Sources */,
+				24574A1E2BFC41850089CC2F /* HealthMetric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
