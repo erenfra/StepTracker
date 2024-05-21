@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2499D7D62BE2F83700738314 /* StepTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7D52BE2F83700738314 /* StepTrackerApp.swift */; };
-		2499D7D82BE2F83700738314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7D72BE2F83700738314 /* ContentView.swift */; };
+		2499D7D82BE2F83700738314 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7D72BE2F83700738314 /* DashboardView.swift */; };
 		2499D7DA2BE2F83A00738314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2499D7D92BE2F83A00738314 /* Assets.xcassets */; };
 		2499D7DD2BE2F83A00738314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2499D7DC2BE2F83A00738314 /* Preview Assets.xcassets */; };
+		2499D7EA2BE5CAC100738314 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7E92BE5CAC100738314 /* HealthDataListView.swift */; };
+		2499D7EC2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7EB2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift */; };
+		2499D7EF2BE5E18F00738314 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499D7EE2BE5E18F00738314 /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2499D7D22BE2F83700738314 /* StepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2499D7D52BE2F83700738314 /* StepTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTrackerApp.swift; sourceTree = "<group>"; };
-		2499D7D72BE2F83700738314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2499D7D72BE2F83700738314 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		2499D7D92BE2F83A00738314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2499D7DC2BE2F83A00738314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2499D7E92BE5CAC100738314 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
+		2499D7EB2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
+		2499D7ED2BE5DFF700738314 /* StepTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepTracker.entitlements; sourceTree = "<group>"; };
+		2499D7EE2BE5E18F00738314 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		2499D7D42BE2F83700738314 /* StepTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2499D7ED2BE5DFF700738314 /* StepTracker.entitlements */,
 				2499D7D52BE2F83700738314 /* StepTrackerApp.swift */,
-				2499D7D72BE2F83700738314 /* ContentView.swift */,
+				2499D7D72BE2F83700738314 /* DashboardView.swift */,
+				2499D7E92BE5CAC100738314 /* HealthDataListView.swift */,
+				2499D7EB2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift */,
+				2499D7EE2BE5E18F00738314 /* HealthKitManager.swift */,
 				2499D7D92BE2F83A00738314 /* Assets.xcassets */,
 				2499D7DB2BE2F83A00738314 /* Preview Content */,
 			);
@@ -137,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2499D7D82BE2F83700738314 /* ContentView.swift in Sources */,
+				2499D7EA2BE5CAC100738314 /* HealthDataListView.swift in Sources */,
+				2499D7D82BE2F83700738314 /* DashboardView.swift in Sources */,
 				2499D7D62BE2F83700738314 /* StepTrackerApp.swift in Sources */,
+				2499D7EF2BE5E18F00738314 /* HealthKitManager.swift in Sources */,
+				2499D7EC2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +283,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepTracker/StepTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = L5MEY32333;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weight data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allow you to add step and weight data to Apple Health.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +315,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepTracker/StepTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = L5MEY32333;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weight data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allow you to add step and weight data to Apple Health.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
