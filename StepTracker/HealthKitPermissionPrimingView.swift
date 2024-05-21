@@ -13,7 +13,7 @@ struct HealthKitPermissionPrimingView: View {
   @Environment(HealthKitManager.self) private var hkManager
   @Environment(\.dismiss) private var dismiss
   @State private var isShowingHealthKitPermission = false
-
+  @Binding var hasSeen: Bool
   var description = """
   This app display your steps and weight data in interactive charts.
 
@@ -40,6 +40,8 @@ struct HealthKitPermissionPrimingView: View {
       .buttonStyle(.borderedProminent)
       .tint(.pink)
     }.padding(30)
+      .interactiveDismissDisabled()
+      .onAppear {  hasSeen = true }
       .healthDataAccessRequest(store: hkManager.store,
                                shareTypes: hkManager.writeTypes,
                                readTypes: hkManager.readTypes,
@@ -57,6 +59,6 @@ struct HealthKitPermissionPrimingView: View {
 }
 
 #Preview {
-  HealthKitPermissionPrimingView()
+  HealthKitPermissionPrimingView(hasSeen: .constant(true))
     .environment(HealthKitManager())
 }

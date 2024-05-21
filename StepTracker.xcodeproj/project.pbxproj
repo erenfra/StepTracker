@@ -63,9 +63,9 @@
 				2499D7D72BE2F83700738314 /* DashboardView.swift */,
 				2499D7E92BE5CAC100738314 /* HealthDataListView.swift */,
 				2499D7EB2BE5DB3100738314 /* HealthKitPermissionPrimingView.swift */,
+				2499D7EE2BE5E18F00738314 /* HealthKitManager.swift */,
 				2499D7D92BE2F83A00738314 /* Assets.xcassets */,
 				2499D7DB2BE2F83A00738314 /* Preview Content */,
-				2499D7EE2BE5E18F00738314 /* HealthKitManager.swift */,
 			);
 			path = StepTracker;
 			sourceTree = "<group>";
