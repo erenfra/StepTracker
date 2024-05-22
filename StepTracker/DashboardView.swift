@@ -28,13 +28,13 @@ struct DashboardView: View {
   @State private var selectedStat: HealthMetricContext = .steps
   @State private var rawSelectedDate: Date?
   var isSteps: Bool { selectedStat == .steps }
-
+  
   var avgStepCount: Double {
     guard !hkManager.stepData.isEmpty else { return 0 }
     let totalSteps = hkManager.stepData.reduce(0) { $0 + $1.value}
     return totalSteps/Double(hkManager.stepData.count)
   }
-
+  
   var selectedHealthMetric: HealthMetric? {
     guard let rawSelectedDate else { return nil }
     return hkManager.stepData.first {
@@ -59,11 +59,11 @@ struct DashboardView: View {
                     .foregroundStyle(.pink)
                   Text("Avg: \(Int(avgStepCount)) Steps")
                     .font(.caption)
-
+                  
                 }
                 Spacer()
                 Image(systemName: "chevron.right")
-
+                
               }
             }
             .foregroundStyle(.secondary)
@@ -137,11 +137,11 @@ struct DashboardView: View {
       }, content: {
         HealthKitPermissionPrimingView(hasSeen: $hasSeenPermissionPriming)
       })
-
+      
     }
     .tint(isSteps ? .pink : .indigo)
   }
-
+  
   var annotationView: some View {
     VStack(alignment: .leading) {
       Text(selectedHealthMetric?.date ?? .now, format: .dateTime.weekday(.abbreviated).month(.abbreviated).day())
